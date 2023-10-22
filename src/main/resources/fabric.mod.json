@@ -17,9 +17,10 @@
 	"entrypoints": {
 		"main": [
 			{
-				"value": "drakefruit.accelerationsfx.Accelerationsfx",
+				"value": "drakefruit.accelerationsfx.AccelerationSFX",
 				"adapter": "kotlin"
 			}
+
 		],
 		"fabric-datagen": [
 			{
