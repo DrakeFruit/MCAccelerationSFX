@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "accelerationsfx",
+	"version": "${version}",
+	"name": "accelerationsfx",
+	"description": "Adds wind SFX tied to the player's acceleration",
+	"authors": [
+		"DrakeFruit"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/DrakeFruit/MCAccelerationSFX"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/accelerationsfx/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			{
+				"value": "drakefruit.accelerationsfx.Accelerationsfx",
+				"adapter": "kotlin"
+			}
+		],
+		"fabric-datagen": [
+			{
+				"value": "drakefruit.accelerationsfx.AccelerationsfxDataGenerator",
+				"adapter": "kotlin"
+			}
+		]
+	},
+	"mixins": [
+		"accelerationsfx.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.23",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*",
+		"fabric-language-kotlin": ">=1.9.10"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
